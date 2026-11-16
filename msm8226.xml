@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Moto G 2013 (falcon) and Moto G LTE (peregrine) on LineageOS 23.2.
+       Needs lineage-23.2-kernel34-patches on top of legacy_support_patches. -->
+  <remote name="gh" fetch="https://github.com" />
+
+  <project path="kernel/motorola/msm8226" name="FPSensor/android_kernel_motorola_msm8226" remote="gh" revision="lineage-23.2" clone-depth="1" />
+  <project path="device/motorola/msm8226-common" name="FPSensor/android_device_motorola_msm8226-common" remote="gh" revision="lineage-23.2" />
+  <project path="device/motorola/falcon" name="FPSensor/android_device_motorola_falcon" remote="gh" revision="lineage-23.2" />
+  <project path="device/motorola/peregrine" name="FPSensor/android_device_motorola_peregrine" remote="gh" revision="lineage-23.2" />
+  <project path="vendor/motorola" name="FPSensor/proprietary_vendor_motorola" remote="gh" revision="lineage-23.2" clone-depth="1" />
+
+  <!-- QCDT dt.img tool, dropped from LineageOS after 18.1 -->
+  <project path="system/tools/dtbtool" name="LineageOS/android_system_tools_dtbtool" remote="gh" revision="lineage-18.1" />
+
+  <!-- msm8974-family HALs (msm8226 maps to QCOM_HARDWARE_VARIANT msm8974) -->
+  <project path="hardware/qcom-caf/msm8974/display" name="Oichkatzelesfrettschen/android_hardware_qcom_display" remote="gh" revision="lineage-22.2-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/audio" name="Oichkatzelesfrettschen/android_hardware_qcom_audio" remote="gh" revision="lineage-22.2-caf-msm8974" />
+  <project path="hardware/qcom-caf/msm8974/media" name="Oichkatzelesfrettschen/android_hardware_qcom_media" remote="gh" revision="lineage-22.2-caf-msm8974" />
+</manifest>
